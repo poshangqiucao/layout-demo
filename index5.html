@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局-flex布局</title>
+    <style>
+        div {
+            height: 500px;
+        }
+        .container {
+            display: flex;
+        }
+        .main {
+            flex: 1 1 auto;
+            order: 2;
+            min-width: 300px;
+            background-color: #747d8c;
+        }
+        .left {
+            flex: 0 0 200px;
+            order: 1;
+            background-color: #ff6b81;
+        }
+        .right {
+            flex: 0 0 300px;
+            order: 3;
+            background-color: #3742fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">main</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

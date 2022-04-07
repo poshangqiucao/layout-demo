@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局-浮动+负边距</title>
+    <style>
+        div {
+            height: 500px;
+        }
+        .aside {
+            width: 200px;
+            background: #747d8c;
+            float: left;
+            margin-right: -100%;
+        }
+        .main {
+            width: 100%;
+            float: left;
+        }
+        .content {
+            background-color: #ff6348;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aside">
+    </div>
+    <div class="main">
+        <div class="content">
+        </div>
+    </div>
+</body>
+</html>
